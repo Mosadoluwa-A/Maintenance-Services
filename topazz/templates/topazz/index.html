@@ -1,0 +1,199 @@
+
+{% extends 'topazz/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+			
+			<header  class="text-center header-center">
+				<h1 align="center" class="header-text">TOPAZ Maintenance Services</h1>
+				<p align="center" class="header-sub"><em>The longetivity of your device is our concern</em></p>
+				<a href="#contact"><button type="button" class="btn btn-outline-warning">Book Now!</button></a>
+			</header>
+		</section>
+		<div class="container">
+			<section id="about">
+				<div class="row">
+					<div class="col-sm-6 mt-5">
+						<h1 class="titles">About Us</h1>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, consequatur optio excepturi culpa accusantium ducimus adipisci, labore voluptatum est maiores earum placeat quis consectetur sunt quo aut qui! Omnis dolorum nisi adipisci, consequatur, explicabo corporis, maiores nulla aperiam asperiores sunt iure? Ea sequi illum tempora?</p>
+
+						<div class="row icon-vertical">
+							<div class="col-sm-4">
+								<span><i class="fas icons fa-bolt"></i> <p class="icons-text">Fast Services</p></span>
+							</div>
+							<div class="col-sm-4">
+								<span><img class="smaller-icon" src="{% static 'topazz/Images/cogwheel.png' %}"><p class="icons-text">99% Efficient!</p></span>
+							</div>
+							<div class="col-sm-4">
+								<span><img class="smaller-icon" src="{% static 'topazz/Images/experience.png' %}"><p class="icons-text">30<sup>+</sup>Experience</p></span>
+							</div>
+						</div>
+							<a href="{% url 'about' %}"><p class="text-center"><button class="btn btn-primary rounded-pill mt-5">View More</button></p></a>
+						
+					</div>
+					<div class="col-sm-6">
+						<img class="mt-3 rounded smaller-image" src="{% static 'topazz/Images/about2.png' %}">	
+					</div>
+				</div>
+		</section>
+		</div>
+		<section id="services">
+			<h1 class=" titles text-center">Our Services</h1>
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-md-6 mt-5">
+						<p class="service-text border p-2 text-center">Plumbing Services <i class="fas fa-wrench"></i></p>
+					</div>
+					<div class="col-md-6 mt-5">
+						<p class="service-text border p-2 text-center"><i class="fas fa-home"></i>&nbsp;Building Project Management</p>
+					</div>
+					<div class="col-md-6 mt-5">
+						<p class="service-text border p-2 text-center">Repairs and Servicing <i class="fas fa-tools"></i></p>
+					</div>
+					<div class="col-md-6 mt-5">
+						<p class="service-text border p-2 text-center"><i class="fas fa-charging-station"></i>&nbsp;Electrical Services</p>
+					</div>
+					<div class="col-md-6 mt-5">
+						<p class="service-text border p-2 text-center">Device Fabrication <i class="fas fa-toolbox"></i></p>
+					</div>
+					<div class="col-md-6 mt-5">
+						<p class="service-text border p-2 text-center"><i class="fas fa-briefcase"></i>&nbsp;Consultancy</p>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<section id="reviews">
+			<h1 class="titles text-center mt-3">Reviews</h1>
+			<p class="text-center big-quote">“</p>
+			<div class="container">
+				<div id="review-carousel" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<blockquote class="blockquote d-block w-100">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime tenetur quaerat porro aliquam ab, architecto in placeat iure perferendis corporis quasi saepe commodi beatae, autem. Inventore, provident debitis officiis consectetur itaque amet, architecto ad molestiae asperiores magnam, quibusdam voluptatem pariatur?</p>
+								<footer class="blockquote-footer text-center bigger-texts"><img src="{% static 'topazz/Images/user.png' %}" class="smaller-user">&nbsp;John Doe</footer>
+							</blockquote>
+						</div>
+						<div class="carousel-item">
+							<blockquote class="blockquote">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime tenetur quaerat porro aliquam ab, architecto in placeat iure perferendis corporis quasi saepe commodi beatae, autem. Inventore, provident debitis officiis consectetur itaque amet, architecto ad molestiae asperiores magnam, quibusdam voluptatem pariatur?</p>
+								<footer class="blockquote-footer text-center bigger-texts"><img src="{% static 'topazz/Images/user.png' %}" class="smaller-user">&nbsp;Sarah West</footer>
+							</blockquote>
+						</div>
+						<div class="carousel-item">
+							<blockquote class="blockquote">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime tenetur quaerat porro aliquam ab, architecto in placeat iure perferendis corporis quasi saepe commodi beatae, autem. Inventore, provident debitis officiis consectetur itaque amet, architecto ad molestiae asperiores magnam, quibusdam voluptatem pariatur?</p>
+								<footer class="blockquote-footer text-center bigger-texts"><img src="{% static 'topazz/Images/user.png' %}" class="smaller-user">&nbsp;Silas Stone</footer>
+							</blockquote>
+						</div>
+						<div class="carousel-item">
+							<blockquote class="blockquote">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime tenetur quaerat porro aliquam ab, architecto in placeat iure perferendis corporis quasi saepe commodi beatae, autem. Inventore, provident debitis officiis consectetur itaque amet, architecto ad molestiae asperiores magnam, quibusdam voluptatem pariatur?</p>
+								<footer class="blockquote-footer text-center bigger-texts"><img src="{% static 'topazz/Images/user.png' %}" class="smaller-user">&nbsp;John Doe</footer>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+		</section>
+		<section id="contact">
+			<h1 class="titles text-center contact-us-title">Contact Us</h1>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 address mt-5">
+						<h3 class="contact-title">TOPAZ Maintenance</h3>
+						<p>No 4, Ajanlekoko Street</p>
+						<p>Aperin, Ibadan Oyo State</p>
+						<p>contact@topaznig.org.ng</p>
+						<p>&phone; +2348092328758</p>
+					</div>
+					<div class="col-md-6">
+						<form id="contact-form" class="mb-3" method="POST">
+							{% csrf_token %}
+		{% if messages %}
+            <ul class="messages">
+					{% for message in messages %}
+						<div class="alert  alert-success {{ message.tags }} alert-dismissible w-100 mt-2" role="alert">
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+								{{ message | safe }}
+						</div>
+					{% endfor %}
+			</ul>
+		{% endif %}
+							<div class="form-row">
+								<div class="col-12 text-center form-text mt-3">
+									<div class="form-check form-check-inline">
+										<input type="radio" name="gender" value="Male" id="male" class="form-check-input" required="required">
+										<label for="male" class="form-check-label">Male</label>
+									</div>
+									<div class="form-check form-check-inline">
+										<input type="radio" name="gender" value="Female" id="female" class="form-check-input" required="required">
+										<label for="female" class="form-check-label">Female</label>
+									</div>
+								</div>
+								<div class="col-12">
+									<input type="text" name="name" class="form-control pt-2" placeholder="Full Name" required="required">
+								</div>
+								<div class="col-12">
+									<input type="text" id="serv" name="services" style="display: none;" class="form-control mt-2 pt-2" placeholder="Services">
+								</div>
+								<div class="col-6 mt-3">
+									<input type="number" name="phone_no" class="form-control" placeholder="Phone Number" required="required">
+								</div>
+								<div class="col-6 mt-3">
+									<input type="email" name="email" class="form-control" placeholder="Email" required="required">
+								</div>
+								<div class="col-12">
+									<strong><p class="checkbox-heading text-center mt-3">Services that interest you</p></strong>
+								</div>
+								<div class="col-12 form-text">
+									<div class="form-check">
+										<input id="plumbing" type="checkbox" value="Plumbing" class="form-check-input mt-3 service">
+										<label for="plumbing" class="form-check-label">Plumbing</label>
+									</div>
+									<div class="form-check">
+										<input id="building" type="checkbox" value="Building Projects" class="form-check-input mt-3 service">
+										<label for="building" class="form-check-label">Building Projects</label>
+									</div>
+									<div class="form-check">
+										<input id="repair" type="checkbox"  value="Repairs" class="form-check-input mt-3 service">
+										<label for="repair" class="form-check-label">Repairs</label>
+									</div>
+									<div class="form-check">
+										<input id="electrical" type="checkbox" value="Electrical Services" class="form-check-input mt-3 service">
+										<label for="electrical" class="form-check-label">Electrical Services</label>
+									</div>
+									<div class="form-check">
+										<input id="fabrication" type="checkbox"  value="Device Fabrication" class="form-check-input mt-3 service">
+										<label for="fabrication">Device Fabrication</label>
+									</div>
+									<div class="form-check">
+										<input id="consultancy" type="checkbox"  value="Consultancy" class="form-check-input mt-3 service ">
+										<label for="consultancy">Consultancy</label>
+									</div>
+								</div>
+								<div class="col-12">
+									<p class="text-center"><button class="btn btn-success" type="submit" onclick="getServices('service','serv')">Submit</button></p>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer mt-3">
+			<p class="text-center">&copy; Mosadoluwa Agbonyin 2020</p>
+			<p class="text-center">Icons made by <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+			Icons made by <a href="https://www.flaticon.com/authors/mynamepong" title="mynamepong">mynamepong</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+		</footer>
+{% endblock %}
+

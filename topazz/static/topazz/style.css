@@ -1,0 +1,245 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#home{
+	height: 30vh;
+	background-image: linear-gradient(to bottom, rgba(10, 10, 10, .3), rgba(10, 10, 10, .57)), url(images/bg1.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.navbar-brand{
+	font-family: lobster;
+	font-size: 1.5rem;
+}
+.header-center{
+	margin-top: 4rem;
+}
+.header-text{
+	color: #800080;
+	font-family: sansita;
+	text-shadow: 1px 1px #fefefe;
+}
+.header-sub{
+	color: #ffef00; 
+}
+#about{
+	height: 60vh;
+	line-height: 1.6;
+}
+#services{
+	height: 40vh;
+	line-height: 1.6;
+	background-color: #0a1f45;
+}
+#mnv{
+	height: 60vh;
+	line-height: 1.6;
+	background-color: #0a1f45;
+}
+#reviews{
+	height: 40vh;
+	line-height: 1.6;
+}
+#contact{
+	height: 60vh;
+	line-height: 1.6;
+	background-color: #0a1f45;
+}
+
+#CV{
+	height: auto;
+	line-height: 1.6;
+}
+
+#our-team{
+	height: 60vh;
+	background-color: #0a1f45;
+}
+
+#login{
+	background-color: #0a1f45;
+}
+
+.login-form {
+	width: 340px;
+	margin: 50px auto;
+}
+.login-form form {
+	margin-top: 120px;
+	margin-bottom: 15px;
+	background: #f7f7f7;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	padding: 30px;
+	border: solid;
+	border-radius: 10px;
+	border-color: #22843C;
+}
+.login-form h2 {
+	margin: 0 0 15px;
+}
+.form-control, .btn {
+	min-height: 38px;
+	border-radius: 5px;
+}
+.btn {        
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.team-img{
+	width: 10rem;
+	margin: 0 auto;
+}
+
+.card {
+    box-shadow: 4px 4px 10px #000, -4px -4px 20px #f000;
+}
+
+.titles{
+	color: #A9A9A9;
+	text-shadow: 1px 1px #000;
+	font-family: sansita;
+	font-size: 3rem;
+}
+.icons{
+	font-size: 6rem;
+	color: #ffcf00; 
+}
+.icons-text{
+	font-size: 1.5rem;
+	font-family: sansita;
+}
+.smaller-icon{
+	width: 6rem;
+}
+.smaller-user{
+	width: 3rem;
+}
+
+.icon-vertical{
+	margin-top: 5rem;
+}
+.smaller-image{
+	height: 35rem;
+}
+.about-text{
+	font-family: Signika Negative;
+}
+.service-text{
+	color: #edab1c;
+	font-size: 1.5rem;
+	cursor: pointer;
+	/*font-family: Signika Negative;*/
+}
+.service-text:hover{
+	font-size: 2rem;
+}
+.big-quote{
+	font-size: 4rem;
+	font-family: Haas Grot Text R Web;
+	font-weight: bold;
+}
+.bigger-texts{
+	font-size: 2rem;
+}
+
+.address{
+	color: white;
+	font-size: 1.5rem;
+	/*line-height: 2*/
+}
+
+.contact-title{
+	font-size: 2rem;
+	font-family: Sansita
+}
+#contact-form{
+	border: .2rem #edab1c solid;
+	border-radius: .5rem;
+	padding: 1.5rem;
+	/*background-color: #0a1f45;*/
+}
+.contact-us-title{
+	font-size: 2.5rem;
+	color: #A9A9A9;
+	text-shadow: 1px 1px #000;
+	font-family: sansita;
+}
+
+.form-text{
+	font-size: 1.5rem;
+	color: white;	
+}
+
+.checkbox-heading{
+	font-size: 1.7rem;
+	color: white;
+}
+
+.mnv-text{
+	color: #edab1c;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.cvs {
+	/*margin: 0.75em 0;*/
+	margin: 0px;
+	padding: 0 1em 1em;
+	font-size: 3rem;
+	font-family: sansita;
+	list-style: none;
+}
+.lis:before { 
+	content: "";
+	/* border-color: transparent purple;
+	border-style: solid;
+	border-width: 0.35em 0 0.35em 0.45em; */
+	display: block;
+	height: 0;
+	width: 0;
+	left: -1em;
+	top: 0.9em;
+	position: relative;
+}
+.lis:hover{
+	font-size: 70px;
+	cursor: pointer;
+}
+.lis:hover:before{
+	border-width: 0.55em 0 0.55em 0.55em;
+	top: 1.1em;
+	cursor: pointer;
+}
+.footer{
+	/*background-color: #edab1c;*/
+	padding: 1rem;
+	font-family: lobster;
+}
+
+@media (min-width: 992px){
+	#home{
+		height: 90vh;
+	}
+	#about{
+		height: auto;
+	}
+	#services{
+		height: 80vh;
+	}
+	#reviews{
+		height: auto;
+	}
+	#contact{
+		height: auto;
+	}
+	#mnv{
+		height: 700px;
+	}
+	#CV{
+		height: 60vh;
+	}
+
+}

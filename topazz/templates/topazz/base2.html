@@ -1,0 +1,59 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'topazz/style.css' %}" type="text/css">
+    
+       <title>{% block title %} Topaz Maintenance {% endblock %}</title>
+    </head>
+
+<body>
+    <section id="login">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand ml-5" href="{% url 'main' %}">Topaz Maintenance</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navStuff">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navStuff">
+                <ul class="navbar-nav ml-auto">
+                    {% if user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'add_team' %}">Add Member</a>
+                    </li>
+                        <li class="nav-item">
+                            <form method="POST" action="{% url 'logout_user' %}">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-primary">Logout</button>
+                              </form>
+                        </li>
+                    {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link active" href="{% url 'login_user' %}">Login</a>
+                        </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+        {% block content %} 
+
+        {% endblock %}
+
+</body>
+
+<footer class="footer" style="background-color: #0a1f45; color: white;">
+	<strong><p class="text-center mt-3">&copy; Mosadoluwa Agbonyin 2020</p></strong>
+</footer>
+
+</html>

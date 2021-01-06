@@ -1,0 +1,51 @@
+
+{% extends 'topazz/base2.html' %}
+
+{% block content %}
+
+{% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <div class="alert  alert-success {{ message.tags }} alert-dismissible w-25 mt-2" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            {{ message | safe }}
+        </div>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+    <div class="container">
+
+        <p class="text-center"><a href="{% url 'add_team' %}"><button class="btn  btn-md btn-secondary mt-5">Add Team Member</button></a></p>
+
+
+        <table class="table table-striped mt-5 mb-5 table-active text-center">
+            <caption>People who indicated interest</caption>
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">S/N</th>
+                <th scope="col">Name</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone No</th>
+                <th scope="col">Services</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for client in clients %}
+              <tr>
+                <th scope="row">{{ forloop.counter }}</th>
+                <td>{{ client.name }}</td>
+                <td>{{ client.gender }}</td>
+                <td>{{ client.email }}</td>
+                <td>{{ client.phone_no }}</td>
+                <td>{{ client.services }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+    </div>
+
+    {% endblock %}
