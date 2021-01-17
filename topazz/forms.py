@@ -11,4 +11,4 @@ class ClientForm(ModelForm):
 class TeamForm(ModelForm):
     class Meta:
         model = Team
-        fields = ['name', 'role', 'description']
+        fields = ['name', 'description', 'role', 'image']

@@ -9,10 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="{% static 'topazz/bootstrap.min.css' %}" type="text/css">
-    <link rel="stylesheet" href="{% static 'topazz/all.min.css' %}" type="text/css">
-    <link rel="stylesheet" href="{% static 'topazz/fontawesome.css' %}" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- <link href="{% static 'fontawesome/css/all.min.css' %}" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="{% static 'topazz/bootstrap/css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'topazz/bootstrap/css/all.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'topazz/bootstrap/css/fontawesome.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'topazz/style.css' %}" type="text/css">
 
    <title>{% block title %} Topaz Maintenance {% endblock %}</title>
@@ -20,7 +21,7 @@
 <body>
 		<section id="home">
 			<nav class="navbar navbar-expand-lg navbar-dark">
-				<a class="navbar-brand ml-5" href="#">Topaz Maintenance</a>
+				<a class="navbar-brand ml-5" href="{% url 'main' %}">Topaz Maintenance</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navStuff">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -56,6 +57,7 @@
 <!-- <script src="bootstrap/js/jquery-3.4.1.min.js"></script> -->
 <!-- <script src="bootstrap/js/popper.min.js"></script> -->
 <script src="{% static 'topazz/app.js' %}"></script>
+<!-- <script src="{% static 'fontawesome/js/all.min.js' %}"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>

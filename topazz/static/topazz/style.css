@@ -14,6 +14,9 @@
 	font-size: 1.5rem;
 }
 .header-center{
+	margin-top: 10rem;
+}
+.header-about{
 	margin-top: 4rem;
 }
 .header-text{
@@ -219,7 +222,7 @@
 	font-family: lobster;
 }
 
-@media (min-width: 992px){
+@media (min-width: 576px){
 	#home{
 		height: 90vh;
 	}
@@ -237,6 +240,9 @@
 	}
 	#mnv{
 		height: 700px;
+	}
+	#our-team{
+		height: 95vh;
 	}
 	#CV{
 		height: 60vh;
