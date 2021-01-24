@@ -222,7 +222,7 @@
 	font-family: lobster;
 }
 
-@media (min-width: 576px){
+@media (min-width: 992px){
 	#home{
 		height: 90vh;
 	}

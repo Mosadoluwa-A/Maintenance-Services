@@ -1,0 +1,397 @@
+/* This is the styling for the medium breakpoint (ipad, kindle and the likes.) */
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#home{
+	height: 30rem;
+	background-image: linear-gradient(to bottom, rgba(10, 10, 10, .3), rgba(10, 10, 10, .57)), url(images/bg1.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.navbar-brand{
+	font-family: lobster;
+	font-size: 1.5rem;
+}
+.header-center{
+	margin-top: 10rem;
+}
+.header-about{
+	margin-top: 4rem;
+}
+.header-text-home{
+	font-size: 3rem;
+	color: #800080;
+	font-family: sansita;
+	text-shadow: 1px 1px #fefefe;
+}
+.header-text-about{
+	font-size: 6rem;
+	color: #800080;
+	font-family: sansita;
+	text-shadow: 1px 1px #fefefe;
+}
+.header-sub{
+	color: #ffef00; 
+}
+.details-text{
+	font-size: 1rem;
+}
+#about-home{
+	height: 45rem;
+	line-height: 1.6;
+}
+#about{
+	height: 50rem;
+	line-height: 1.6;
+}
+#services{
+	height: 40rem;
+	line-height: 1.6;
+	background-color: #0a1f45;
+}
+#mnv{
+	height: 55rem;
+	line-height: 1.6;
+	background-color: #0a1f45;
+}
+#reviews{
+	height: 30rem;
+	line-height: 1.6;
+}
+#contact{
+	height: 45rem;
+	line-height: 1.6;
+	background-color: #0a1f45;
+}
+
+#CV{
+	height: 20rem;
+	line-height: 1.6;
+}
+
+#our-team{
+	height: 50rem;
+	background-color: #0a1f45;
+}
+
+#login{
+	background-color: #0a1f45;
+}
+
+.login-form {
+	width: 340px;
+	margin: 50px auto;
+}
+.login-form form {
+	margin-top: 120px;
+	margin-bottom: 15px;
+	background: #f7f7f7;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	padding: 30px;
+	border: solid;
+	border-radius: 10px;
+	border-color: #22843C;
+}
+.login-form h2 {
+	margin: 0 0 15px;
+}
+.form-control, .btn {
+	min-height: 38px;
+	border-radius: 5px;
+}
+.btn {        
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.team-img{
+	width: 10rem;
+	margin: 0 auto;
+}
+
+.card {
+    box-shadow: 4px 4px 10px #000, -4px -4px 20px #f000;
+}
+
+.titles{
+	color: #A9A9A9;
+	text-shadow: 1px 1px #000;
+	font-family: sansita;
+	font-size: 3rem;
+}
+.icons{
+	font-size: 6rem;
+	color: #ffcf00; 
+}
+.icons-text{
+	font-size: 1.5rem;
+	font-family: sansita;
+}
+.smaller-icon{
+	width: 6rem;
+}
+.smaller-user{
+	width: 3rem;
+}
+
+.icon-vertical{
+	margin-top: 5rem;
+}
+.smaller-image{
+	height: 35rem;
+}
+.about-text{
+	font-family: Signika Negative;
+}
+.service-text{
+	color: #edab1c;
+	font-size: 1.5rem;
+	cursor: pointer;
+	/*font-family: Signika Negative;*/
+}
+.service-text:hover{
+	font-size: 2rem;
+}
+.big-quote{
+	font-size: 4rem;
+	font-family: Haas Grot Text R Web;
+	font-weight: bold;
+}
+.bigger-texts{
+	font-size: 2rem;
+}
+
+.address{
+	color: white;
+	font-size: 1.5rem;
+	/*line-height: 2*/
+}
+
+.contact-title{
+	font-size: 2rem;
+	font-family: Sansita
+}
+#contact-form{
+	border: .2rem #edab1c solid;
+	border-radius: .5rem;
+	padding: 1.5rem;
+	/*background-color: #0a1f45;*/
+}
+.contact-us-title{
+	font-size: 2.5rem;
+	color: #A9A9A9;
+	text-shadow: 1px 1px #000;
+	font-family: sansita;
+}
+
+.form-text{
+	font-size: 1.5rem;
+	color: white;	
+}
+
+.checkbox-heading{
+	font-size: 1.7rem;
+	color: white;
+}
+
+.mnv-text{
+	color: #edab1c;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.cvs {
+	/*margin: 0.75em 0;*/
+	margin: 0px;
+	padding: 0 1em 1em;
+	font-size: 2rem;
+	font-family: sansita;
+	list-style: none;
+	min-height: 8rem;
+}
+.cvs-check{
+	font-size: 1.5rem;
+}
+
+/* .lis{
+	min-height: 5rem;
+	min-width: 100%;
+	height: 2rem;
+	/* color: #f7f; 
+} */
+
+.lis:before { 
+	content: "";
+	/* border-color: transparent purple;
+	border-style: solid;
+	border-width: 0.35em 0 0.35em 0.45em; */
+	display: block;
+	height: 0;
+	width: 0;
+	left: -1em;
+	top: 0.9em;
+	position: relative;
+}
+.lis:hover{
+	font-size: 70px;
+	cursor: pointer;
+	min-height: 7rem;
+	width: 100%;
+}
+.lis:hover:before{
+	border-width: 0.55em 0 0.55em 0.55em;
+	top: 1.1em;
+	cursor: pointer;
+	/* height: 5rem; */
+}
+.footer{
+	/*background-color: #edab1c;*/
+	padding: 1rem;
+	font-family: lobster;
+}
+
+@media (max-width: 574px){
+	#home{
+		height: 30rem;
+	}
+	#about{
+		height: 35rem;
+	}
+	#about-home{
+		height: 30rem;
+		line-height: 1.6;
+	}
+	#services{
+		height: 25rem;
+	}
+	#mnv{
+		height: 35rem;
+	}
+	#CV{
+		height: 8rem;
+	}
+	#our-team{
+		height: 90rem;
+	}
+	#reviews{
+		height: 20rem;
+	}
+	#contact{
+		height: 55rem;
+	}
+	.nav-link{
+		font-size: .5rem;
+	}
+	.container{
+		max-width: 600px;
+	}
+	.smaller-image{
+		display: none;
+	}
+	.text-justify{
+		font-size: .7rem;
+	}
+	.icons{
+		font-size: 3rem;
+	}
+	.icons-text{
+		font-size: .8rem;
+	}
+
+	.smaller-icon{
+		width: 3rem;
+	}
+	.header-text-home{
+		font-size: 2rem;
+	}
+	.header-text-about{
+		font-size: 3rem;
+	}
+	.header-sub{
+		font-size: .8rem;
+		color: #ffef00; 
+	}
+	.titles{
+		font-size: 1.5rem;
+	}
+	.service-text{
+		font-size: .8rem;
+	}
+	.details-text{
+		font-size: .5rem;
+	}
+	.cvs{
+		font-size: 1rem;
+	}
+	.cvs-check{
+		font-size: .5rem;
+	}
+	.card-title{
+		font-size: 1rem;
+	}
+	.review-text{
+		font-size: 1rem;
+	}
+	.bigger-texts{
+		font-size: 1rem;
+	}
+	.smaller-user{
+		width: 2rem;
+	}
+	.address{
+		font-size: 1rem;
+		text-align: center;
+	}
+	.contact-title{
+		font-size: 1rem;
+	}
+	
+	.form-text{
+		font-size: 1rem;
+		color: white;	
+	}
+	
+	.checkbox-heading{
+		font-size: 1rem;
+		color: white;
+	}
+}
+
+@media (min-width: 992px){
+	#home{
+		height: 40rem;
+	}
+	#about{
+		height: 40rem;
+	}
+	#about-home{
+		height: 40rem;
+	}
+	#services{
+		height: 35rem;
+	}
+	#reviews{
+		height: 25rem;
+	}
+	#contact{
+		height: auto;
+	}
+	#mnv{
+		height: 700px;
+	}
+	#our-team{
+		height: 40rem;
+	}
+	#CV{
+		height: 30rem;
+	}
+	.cvs{
+		font-size: 3rem;
+	}
+	.cvs-check{
+		font-size: 2.5rem;
+	}
+
+}
