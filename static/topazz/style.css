@@ -251,10 +251,13 @@
 	padding: 1rem;
 	font-family: lobster;
 }
+.table-texts{
+	font-size: 1rem;
+}
 
 @media (max-width: 574px){
 	#home{
-		height: 30rem;
+		height: 35rem;
 	}
 	#about{
 		height: 35rem;
@@ -302,6 +305,9 @@
 
 	.smaller-icon{
 		width: 3rem;
+	}
+	.header-center{
+		margin-top: 5rem;
 	}
 	.header-text-home{
 		font-size: 2rem;
@@ -356,6 +362,9 @@
 	.checkbox-heading{
 		font-size: 1rem;
 		color: white;
+	}
+	.table-texts{
+		font-size: .3rem;
 	}
 }
 
